@@ -1,0 +1,47 @@
+CSS Table Properties
+Property	Description
+border	         Sets all the border properties in one declaration
+border-collapse	Specifies whether or not table borders should be collapsed
+border-spacing	Specifies the distance between the borders of adjacent cells
+caption-side	Specifies the placement of a table caption
+empty-cells	Specifies whether or not to display borders and background on empty cells in a table
+table-layout	Sets the layout algorithm to be used for a table
+
+
+
+Table Borders
+To specify table borders in CSS, use the border property.
+
+The example below specifies a black border for <table>, <th>, and <td> elements:
+Notice that the table in the example above has double borders. This is because both the table and the <th> and <td> elements have separate borders.
+
+
+
+Horizontal Alignment
+The text-align property sets the horizontal alignment (like left, right, or center) of the content in <th> or <td>.
+
+By default, the content of <th> elements are center-aligned and the content of <td> elements are left-aligned.
+
+The following example left-aligns the text in <th> elements:
+
+
+
+Vertical Alignment
+The vertical-align property sets the vertical alignment (like top, bottom, or middle) of the content in <th> or <td>.
+
+By default, the vertical alignment of the content in a table is middle (for both <th> and <td> elements).
+
+The following example sets the vertical text alignment to bottom for <td> elements:
+
+
+Hoverable Table
+Use the :hover selector on <tr> to highlight table rows on mouse over:
+
+
+For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows:
+
+
+Responsive Table
+A responsive table will display a horizontal scroll bar if the screen is too small to display the full content:
+
+Add a container element (like <div>) with overflow-x:auto around the <table> element to make it responsive:
