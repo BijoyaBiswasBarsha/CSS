@@ -1,0 +1,37 @@
+All CSS Float Properties
+Property	Description
+clear	         Specifies on which sides of an element where floating elements are not allowed to float
+float	         Specifies whether or not an element should float
+overflow	Specifies what happens if content overflows an element's box
+overflow-x	Specifies what to do with the left/right edges of the content if it overflows the element's content area
+overflow-y	Specifies what to do with the top/bottom edges of the content if it overflows the element's content area
+
+
+
+The float property specifies whether or not an element should float.
+
+The clear property is used to control the behavior of floating elements.
+
+
+The float Property
+In its simplest use, the float property can be used to wrap text around images.
+
+
+The clear Property
+The clear property is used to control the behavior of floating elements.
+
+Elements after a floating element will flow around it. To avoid this, use the clear property.
+
+The clear property specifies on which sides of an element floating elements are not allowed to float:
+
+
+The clearfix Hack
+If an element is taller than the element containing it, and it is floated, it will overflow outside of its container.
+
+Then we can add overflow: auto; to the containing element to fix this problem:
+
+
+
+The overflow:auto clearfix works well as long as you are able to keep control of your margins and padding (else you might see scrollbars). The new, modern clearfix hack however, is safer to use, and the following code is used for most webpages:
+
+

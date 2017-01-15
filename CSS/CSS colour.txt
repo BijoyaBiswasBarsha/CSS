@@ -1,0 +1,23 @@
+CSS COLOURS
+
+Colors in CSS are most often specified by:
+
+a valid color name - like "red"
+an RGB value - like "rgb(255, 0, 0)"
+a HEX value - like "#ff0000"
+Color Names
+Colors set by using color names:
+
+
+RGB (Red, Green, Blue)
+RGB color values can be specified using this formula: rgb(red, green, blue).
+
+Each parameter (red, green, blue) defines the intensity of the color between 0 and 255.
+
+For example, rgb(255,0,0) is displayed as red, because red is set to its highest value (255) and the others are set to 0. 
+
+
+Hexadecimal Colors
+RGB values can also be specified using hexadecimal color values in the form: #RRGGBB, where RR (red), GG (green) and BB (blue) are hexadecimal values between 00 and FF (same as decimal 0-255).
+
+For example, #FF0000 is displayed as red, because red is set to its highest value (FF) and the others are set to the lowest value (00). Note: HEX values are case-insensitive: "#ff0000" is the same as "FF0000".

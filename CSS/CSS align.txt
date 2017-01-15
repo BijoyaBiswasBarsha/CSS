@@ -1,0 +1,56 @@
+Center Align Elements
+To horizontally center a block element (like <div>), use margin: auto;
+
+Setting the width of the element will prevent it from stretching out to the edges of its container.
+
+The element will then take up the specified width, and the remaining space will be split equally between the two margins:
+
+Note: Center aligning has no effect if the width property is not set (or set to 100%).
+
+
+
+Center Align Text
+To just center the text inside an element, use text-align: center;
+
+
+
+Center an Image
+To center an image, use margin: auto; and make it into a block element:
+
+
+Left and Right Align - Using position
+One method for aligning elements is to use position: absolute;:
+
+
+
+
+Note: Absolute positioned elements are removed from the normal flow, and can overlap elements.
+
+Tip: When aligning elements with position, always define margin and padding for the <body> element. This is to avoid visual differences in different browsers.
+
+There is also a problem with IE8 and earlier, when using position. If a container element (in our case <div class="container">) has a specified width, and the !DOCTYPE declaration is missing, IE8 and earlier versions will add a 17px margin on the right side. This seems to be space reserved for a scrollbar. So, always set the !DOCTYPE declaration when using position:
+
+
+Left and Right Align - Using float
+Another method for aligning elements is to use the float property:
+
+
+Tip: When aligning elements with float, always define margin and padding for the <body> element. This is to avoid visual differences in different browsers.
+
+There is also a problem with IE8 and earlier, when using float. If the !DOCTYPE declaration is missing, IE8 and earlier versions will add a 17px margin on the right side. This seems to be space reserved for a scrollbar. So, always set the !DOCTYPE declaration when using float:
+
+
+
+Center Vertically - Using padding
+There are many ways to center an element vertically in CSS. A simple solution is to use top and bottom padding:
+
+To center both vertically and horizontally, use padding and text-align: center:
+
+
+Center Vertically - Using line-height
+Another trick is to use the line-height property with a value that is equal to the height property.
+
+
+
+Center Vertically - Using position & transform
+If padding and line-height is not an option, a third solution is to use positioning and the transform property:

@@ -1,0 +1,52 @@
+Styling Input Fields
+Use the width property to determine the width of the input field:
+
+
+The example above applies to all <input> elements. If you only want to style a specific input type, you can use attribute selectors:
+
+input[type=text] - will only select text fields
+input[type=password] - will only select password fields
+input[type=number] - will only select number fields
+etc..
+
+
+
+
+Padded Inputs
+Use the padding property to add space inside the text field.
+
+Tip: When you have many inputs after each other, you might also want to add some margin, to add more space outside of them:
+
+Note that we have set the box-sizing property to border-box. This makes sure that the padding and eventually borders are included in the total width and height of the elements. 
+
+
+
+Bordered Inputs
+Use the border property to change the border size and color, and use the border-radius property to add rounded corners:
+
+If you only want a bottom border, use the border-bottom property:
+
+Colored Inputs
+Use the background-color property to add a background color to the input, and the color property to change the text color:
+
+
+
+Focused Inputs
+By default, some browsers will add a blue outline around the input when it gets focus (clicked on). You can remove this behavior by adding outline: none; to the input.
+
+Use the :focus selector to do something with the input field when it gets focus:
+
+
+Input with icon/image
+If you want an icon inside the input, use the background-image property and position it with the background-position property. Also notice that we add a large left padding to reserve the space of the icon:
+
+
+
+Animated Search Input
+In this example we use the CSS3 transition property to animate the width of the search input when it gets focus.
+
+
+
+Styling Textareas
+Tip: Use the resize property to prevent textareas from being resized (disable the "grabber" in the bottom right corner):
+

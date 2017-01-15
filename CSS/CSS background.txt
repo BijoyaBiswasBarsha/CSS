@@ -1,0 +1,51 @@
+Background Color
+The background-color property specifies the background color of an element.
+With CSS, a color is most often specified by:
+
+a valid color name - like "red"
+a HEX value - like "#ff0000"
+an RGB value - like "rgb(255,0,0)"
+Look at CSS Color Values for a complete list of possible color values.
+
+Background Image
+The background-image property specifies an image to use as the background of an element.
+
+By default, the image is repeated so it covers the entire element.
+
+Background Image - Repeat Horizontally or Vertically
+By default, the background-image property repeats an image both horizontally and vertically.
+
+Background Image - Set position and no-repeat
+Showing the background image only once is also specified by the background-repeat property:
+
+In the example above, the background image is shown in the same place as the text. We want to change the position of the image, so that it does not disturb the text too much.
+
+The position of the image is specified by the background-position property:
+
+Background Image - Fixed position
+To specify that the background image should be fixed (will not scroll with the rest of the page), use the background-attachment property:
+
+Background - Shorthand property
+To shorten the code, it is also possible to specify all the background properties in one single property. This is called a shorthand property.
+
+The shorthand property for background is background:
+
+
+When using the shorthand property the order of the property values is:
+
+background-color
+background-image
+background-repeat
+background-attachment
+background-position
+It does not matter if one of the property values is missing, as long as the other ones are in this order.
+
+
+All CSS Background Properties
+Property	                   Description
+background	          Sets all the background properties in one declaration
+background-attachment	  Sets whether a background image is fixed or scrolls with the rest of the page
+background-color	  Sets the background color of an element
+background-image	  Sets the background image for an element
+background-position	  Sets the starting position of a background image
+background-repeat	  Sets how a background image will be repeated
