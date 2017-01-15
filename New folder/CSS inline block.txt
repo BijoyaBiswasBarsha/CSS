@@ -1,0 +1,8 @@
+The inline-block Value
+It has been possible for a long time to create a grid of boxes that fills the browser width and wraps nicely (when the browser is resized), by using the float property.
+
+However, the inline-block value of the display property makes this even easier.
+
+inline-block elements are like inline elements but they can have a width and a height.
+
+The same effect can be achieved by using the inline-block value of the display property (notice that no clear property is needed):

@@ -1,0 +1,128 @@
+Navigation Bars
+Having easy-to-use navigation is important for any web site.
+
+With CSS you can transform boring HTML menus into good-looking navigation bars.
+
+Navigation Bar = List of Links
+A navigation bar needs standard HTML as a base.
+
+In our examples we will build the navigation bar from a standard HTML list.
+
+A navigation bar is basically a list of links, so using the <ul> and <li> elements makes perfect sense:
+
+
+
+Example explained:
+
+list-style-type: none; - Removes the bullets. A navigation bar does not need list markers
+Set margin: 0; and padding: 0; to remove browser default settings
+The code in the example above is the standard code used in both vertical, and horizontal navigation bars.
+
+
+Vertical Navigation Bar
+To build a vertical navigation bar, you can style the <a> elements inside the list, in addition to the code above:
+
+
+Example explained:
+
+display: block; - Displaying the links as block elements makes the whole link area clickable (not just the text), and it allows us to specify the width (and padding, margin, height, etc. if you want)
+width: 60px; - Block elements take up the full width available by default. We want to specify a 60 pixels width
+You can also set the width of <ul>, and remove the width of <a>, as they will take up the full width available when displayed as block elements. This will produce the same result as our previous example:
+
+
+Create a basic vertical navigation bar with a gray background color and change the background color of the links when the user moves the mouse over them:
+
+Home
+News
+Contact
+About
+
+
+Active/Current Navigation Link
+Add an "active" class to the current link to let the user know which page he/she is on:
+
+Home
+News
+Contact
+About
+
+
+
+Center Links & Add Borders
+Add text-align:center to <li> or <a> to center the links.
+
+Add the border property to <ul> add a border around the navbar. If you also want borders inside the navbar, add a border-bottom to all <li> elements, except for the last one:
+
+Home
+News
+Contact
+About
+
+
+
+
+Full-height Fixed Vertical Navbar
+Create a full-height, "sticky" side navigation:
+
+
+
+
+
+Horizontal Navigation Bar
+There are two ways to create a horizontal navigation bar. Using inline or floating list items.
+
+Inline List Items
+One way to build a horizontal navigation bar is to specify the <li> elements as inline, in addition to the "standard" code above:
+
+
+
+Example explained:
+
+display: inline; - By default, <li> elements are block elements. Here, we remove the line breaks before and after each list item, to display them on one line
+
+
+
+Floating List Items
+Another way of creating a horizontal navigation bar is to float the <li> elements, and specify a layout for the navigation links:
+
+
+Example explained:
+
+float: left; - use float to get block elements to slide next to each other
+display: block; - Displaying the links as block elements makes the whole link area clickable (not just the text), and it allows us to specify padding (and height, width, margins, etc. if you want)
+padding: 8px; - Since block elements take up the full width available, they cannot float next to each other. Therefore, specify some padding to make them look good
+background-color: #dddddd; - Add a gray background-color to each a element
+
+Tip: Add the background-color to <ul> instead of each <a> element if you want a full-width background color:
+
+
+
+
+Horizontal Navigation Bar Examples
+Create a basic horizontal navigation bar with a dark background color and change the background color of the links when the user moves the mouse over them:
+
+
+
+Active/Current Navigation Link
+Add an "active" class to the current link to let the user know which page he/she is on:
+
+
+
+Right-Align Links
+Right-align links by floating the list items to the right (float:right;):
+
+
+
+Border Dividers
+Add the border-right property to <li> to create link dividers:
+
+
+
+Fixed Navigation Bar
+Make the navigation bar stay at the top or the bottom of the page, even when the user scrolls the page:
+
+
+
+Gray Horizontal Navbar
+An example of a gray horizontal navigation bar with a thin gray border:
+

@@ -1,0 +1,27 @@
+The opacity property specifies the opacity/transparency of an element.
+
+Transparent Image
+The opacity property can take a value from 0.0 - 1.0. The lower value, the more transparent:
+
+
+Note: IE8 and earlier use filter:alpha(opacity=x). The x can take a value from 0 - 100. A lower value makes the element more transparent.
+
+
+Transparent Hover Effect
+The opacity property is often used together with the :hover selector to change the opacity on mouse-over:
+
+
+Example explained
+The first CSS block is similar to the code in Example 1. In addition, we have added what should happen when a user hovers over one of the images. In this case we want the image to NOT be transparent when the user hovers over it. The CSS for this is opacity:1;.
+
+When the mouse pointer moves away from the image, the image will be transparent again.
+
+
+Transparent Box
+When using the opacity property to add transparency to the background of an element, all of its child elements become transparent as well. This can make the text inside a fully transparent element hard to read:
+
+
+
+Transparency using RGBA
+If you do not want to apply opacity to child elements, like in our example above, use RGBA color values.
+
